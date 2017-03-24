@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Affix Plugin</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:400px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) navbar on scroll</h3>
+  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="400">
+  <ul class="nav navbar-nav" style="width: 100%;">
+    <li class="active"><a href="#">Basic Topnav</a></li>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+
+
+<div class="container-fluid" style="height:1000px">
+  <h1>Bootstrap Affix Plugin</h1>
+
+  <p>The Affix plugin allows an element to become affixed (locked) to an area on the page and is used with the scroll position:</p>
+
+  <p>This plugin toggles the behavior on and off by changing the value of <b>css position</b> from <b>static</b> to <b>fixed</b>.</p>
+
+  <hr />
+
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+  <h3>This is some text...</h3>
+</div>
+
+
+</body>
+</html>

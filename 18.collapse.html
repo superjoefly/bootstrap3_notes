@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Collapse</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Collapse</h1>
+
+<p>Collapsibles are useful when you want to hide and show large amounts of content:</p>
+
+<hr />
+
+<h2>Basic Collapsible</h2>
+
+<p>Use the <b>.collapse</b> class to indicate a collapsible element.</p>
+
+<p>Use the <b>data-toggle="collapse"</b> attribute on a link or a button to show/hide the content.</p>
+
+<p>Use the <b>data-target="#id"</b> attribute to connect the button/link with the content.</p>
+
+<p><strong>Note:</strong> for a-elements, you can use the <b>href</b> attribute instead of the <b>data-target</b> attribute.</p>
+
+<hr />
+
+<h2>Basic Collapsible</h2>
+
+<div class="container">
+  <button data-toggle="collapse" data-target="#demo1">Collapsible</button>
+  <div id="demo1" class="collapse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+  </div>
+</div>
+
+<p>By default the collapsible is hidden, however, you can add the <b>.in</b> class to show the content by default:</p>
+
+<div class="container">
+  <button data-toggle="collapse" data-target="#demo1">Collapsible</button>
+  <div id="demo1" class="collapse in">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+  </div>
+</div>
+
+<hr />
+
+<h2>Collapsible Panel</h2>
+
+<p>Collapsible panel group:</p>
+
+<div class="container">
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#panel-content">Collapsible Panel</a>
+        </h3>
+      </div>
+      <div id="panel-content" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Collapsible List Group</h2>
+
+<p>Collapsible panel with list group inside:</p>
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#panel-list">Collapsible Panel List</a>
+      </h3>
+    </div>
+    <div id="panel-list" class="panel-collapse collapse">
+      <div class="list-group">
+        <a href="#" class="list-group-item">First</a>
+        <a href="#" class="list-group-item">Second</a>
+        <a href="#" class="list-group-item">Third</a>
+      </div>
+      <div class="panel-footer">Footer</div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Accordion</h2>
+
+<p>Simple accordion: <b>note:</b> use the <b>data-parent</b> attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible items is shown.</p>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          Collapsible Group 1
+        </a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          Collapsible Group 2
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          Collapsible Group 3
+        </a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Images</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Images</h1>
+
+<h2>Rounded Corners</h2>
+
+<p>The <b>img-rounded</b> class adds rounded corners to an image:</p>
+
+<img src="images/bella1.jpg" height="200" width="200" class="img-rounded" />
+
+<hr />
+
+<h2>Circle</h2>
+
+<p>The <b>img-circle</b> class shaped the image into a circle:</p>
+
+<img src="images/view1.jpg" height="200" width="200" class="img-circle" />
+
+<hr />
+
+<h2>Thumbnail</h2>
+
+<p>The <b>img-thumbnail</b> class shapes the image to a thumbnail:</p>
+
+<img src="images/deer1.jpg" height="200" width="200" class="img-thumbnail" />
+
+<hr />
+
+<h2>Responsive Images</h2>
+
+<p>Responsive images automatically adjust to fit the size of the screen.</p>
+
+<p>Use the <b>.img-responsive</b> class on the image tag so that it will scale according to it's parent element.</p>
+
+<p>The <b>img-responsive</b> class adds <b>display: block</b> and <b>max-width: 100%</b> and <b>height: auto</b> to the image:</p>
+
+<img src="images/lamp1.jpg" class="img-responsive" />
+
+<hr />
+
+<h2>Image Gallery</h2>
+
+<p>Use the Bootstrap grid system along with the <b>.thumbnail</b> class to create an image gallery:</p>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="images/view1.jpg" style="width: 100%" />
+      <div class="caption">View</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="images/deer1.jpg" style="width: 100%" />
+      <div class="caption">Deer</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="images/bella1.jpg" style="width: 100%" />
+      <div class="caption">Bella</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="images/lamp1.jpg" style="width: 100%" />
+      <div class="caption">Lamp</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr />
+
+<h2>Responsive Embeds</h2>
+
+<p>Use the <b>.embed-responsive-item</b> class on these elements: <b>iframe, embed, video, object</b>. This allows video and/or slideshows to scale properly.</p>
+
+<p>The containing div defines the aspect ratio (16by9).</p>
+
+<p><strong>The two valid aspect ratio options are 16by9 and 4by3</strong>.</p>
+
+<h3>Example: iframe</h3>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="http://www.bing.com"></iframe>
+</div>
+
+</body>
+</html>

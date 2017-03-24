@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Grid System</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Matchheight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Grid System</h1>
+
+<p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+
+<p>If you don't want to use all 12 columns individually, you can group the columns together to create wider columns:</p>
+
+<p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</p>
+
+<p><strong>Tip:</strong> remember that grid colums should add up to 12 for a row. More than that, columns will stack no matter what the viewport.</p>
+
+<h2>Grid Classes</h2>
+
+<p>The Bootstrap grid system has four classes:</p>
+
+<ul>
+  <li>xs for phones</li>
+  <li>sm for tablets</li>
+  <li>md for desktops</li>
+  <li>lg for larger desktops</li>
+</ul>
+
+<p><strong>Tip:</strong> each class scales up, so if you wish to set the same widths for xs and sm, you only need to specify xs.</p>
+
+<h2>Grid System Rules:</h2>
+
+<ul>
+  <li>Rows must be placed within a <b>container</b> (fixed-width) or a <b>container-fluid</b> (full-width) for proper alignment and padding</li>
+  <li>Use <b>rows</b> to create a horizontal group of <b>columns</b></li>
+  <li>Conten should be placed within <b>columns</b> and only columns may be immediate children of <b>rows</b></li>
+  <li>Predefined classes are available for quickly making grid layouts</li>
+  <li>Columns create <b>gutters</b>, gaps between column content, via padding. The padding is offset in rows for the first and last column via negative margin on <b>.rows</b></li>
+  <li>Grid columns are created by specifying the number of 12 available columns you'd like to span. For example, three equal columns would each use a <b>.col-sm-4</b> to amount to 12</li>
+</ul>
+
+<hr />
+
+<h2>Basic Grid</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12" style="border:2px solid red;">sol-12-sm</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="border: 2px solid blue">col-4-sm</div>
+    <div class="col-sm-4" style="border: 2px solid orange">col-4-sm</div>
+    <div class="col-sm-4" style="border: 2px solid yellow">col-4-sm</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" style="border: 2px solid blue">col-6-sm</div>
+    <div class="col-sm-6" style="border: 2px solid purple">col-6-sm</div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Stacked to Horizontal</h2>
+
+<p>The following example shows a simple "stacked to horizontal" two column layout, meaning it will result in a 50%/50% split on all screens except extra small screens, where it will automatically stack:</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6" style="border: 2px solid blue">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+    <div class="col-sm-6" style="border: 2px solid orange">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Fluid Grid</h2>
+
+<div class="container-fluid">
+  <div class="row box">
+    <div class="col-sm-3 item" style="border: 2px solid yellow">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+    <div class="col-sm-6 item" style="border: 2px solid red">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+    <div class="col-sm-3 item" style="border: 2px solid yellow">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Small Devices (a 25/75 split)</h2>
+
+<p>For small devices, use the <b>.col-sm-*</b> classes:</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 item" style="border: 2px solid red">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+    <div class="col-sm-8 item" style="border: 2px solid blue">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+  </div>
+</div>
+
+<p><strong>Make sure the the sum of the columns is always 12</strong></p>
+
+  <hr />
+
+  <h2>Mixed Small and Medium Classes</h2>
+
+  <p>This example uses bot small and medium classes...the columns span different % based on screen size:</p>
+
+  <p>For medium devices, use the <b>col-md-*</b> classes:</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-6 item" style="border: 2px solid purple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+      <div class="col-sm-8 col-md-6 item" style="border: 2px solid orange">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Only Medium Class (25/75 split)</h2>
+
+  <p>This example uses only the medium class with a 25/75 split:</p>
+
+  <div class="container">
+    <div class="col-md-4 item" style="border: 2px solid blue">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+    <div class="col-md-8 item" style="border: 2px solid orange">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Large Devices</h2>
+
+  <p>For large devices use the <b>col-lg-*</b> classes:</p>
+
+  <p>This example mixes the sm/md/lg classes to produce different column widths for each screen size:</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-4 col-lg-3 item" style="border: 2px solid orange">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+      <div class="col-sm-3 col-md-4 col-lg-6 item" style="border: 2px solid purple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item" style="border: 2px solid red">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Only Large Class</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 item" style="border: 2px solid red">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+      <div class="col-lg-4 item" style="border: 2px solid blue">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+      <div class="col-lg-4 item" style="border: 2px solid red">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+$(function() {
+  $('.item').matchHeight();
+});
+</script>
+
+</body>
+</html>

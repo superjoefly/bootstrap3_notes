@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap List Groups</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap List Groups</h1>
+
+<hr />
+
+<h2>Basic List Group</h2>
+
+<p>To create a basic list group, us an ul-element with class <b>.list-group</b>, and li-elements with class <b>.list-group-item:</b></p>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item">First Item</li>
+    <li class="list-group-item">Second Item</li>
+    <li class="list-group-item">Third Item</li>
+  </ul>
+</div>
+
+<hr />
+
+<h2>List Group with Badges</h2>
+
+<p>To create a badge, create a span-element with class <b>.badge</b> inside the list item. The badge will automatically be positioned to the right:</p>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item">New<span class="badge">3</span></li>
+    <li class="list-group-item">Trash<span class="badge">6</span></li>
+    <li class="list-group-item">Saved<span class="badge">7</span></li>
+  </ul>
+</div>
+
+<hr />
+
+<h2>List Group with Linked Items</h2>
+
+<p>To create a list group with linked items, use a <b>div-element</b> with <b>a-elements</b>. This will also add a gray background color on hover:</p>
+
+<div class="container">
+  <div class="list-group">
+    <a href="#" class="list-group-item">First Link</a>
+    <a href="#" class="list-group-item">Second Link</a>
+    <a href="#" class="list-group-item">Third Link</a>
+  </div>
+</div>
+
+<hr />
+
+<h2>Active State</h2>
+
+<p>Use the <b>.active</b> class to highlight the current item:</p>
+
+<div class="container">
+  <div class="list-group">
+    <a href="#" class="list-group-item">First Link</a>
+    <a href="#" class="list-group-item">Second Link</a>
+    <a href="#" class="list-group-item active">Third Link</a>
+  </div>
+</div>
+
+<hr />
+
+<h2>Disable Item</h2>
+
+<p>To disable an item, add the <b>.disabled</b> class:</p>
+
+<div class="container">
+  <div class="list-group">
+    <a href="#" class="list-group-item">First Link</a>
+    <a href="#" class="list-group-item">Second Link</a>
+    <a href="#" class="list-group-item disabled">Third Link</a>
+  </div>
+</div>
+
+<hr />
+
+<h2>Contextual Classes</h2>
+
+<p>Use contextual classes to color list items.</p>
+
+<p>The classes for coloring list-items are: .list-group-item-success, list-group-item-info, list-group-item-warning, and .list-group-item-danger:
+</p>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">Success</li>
+    <li class="list-group-item list-group-item-info">Info</li>
+    <li class="list-group-item list-group-item-warning">Warning</li>
+    <li class="list-group-item list-group-item-danger">Danger</li>
+  </ul>
+</div>
+
+<hr />
+
+<h2>Custom Content</h2>
+
+<p>You can add nearly any HTML inside a list group item.</p>
+
+<p>Bootstrap provides the <b>.list-group-item-heading</b> and <b>.list-group-item-text</b>:</p>
+
+<div class="container">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-success active">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-danger">
+      <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

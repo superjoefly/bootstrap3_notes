@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Tooltip</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Tooltip</h1>
+
+<p>The tooltip plugin is a small popup box that appears when a user moves the mouse pointer over an element:</p>
+
+<hr />
+
+<h2>Create a Tooltip</h2>
+
+<p>To create a tooltip, use the <b>data-toggle="tooltip"</b> attribute on an element.</p>
+
+<p>Use the <b>title</b> attribute to specify the text that should be displayed inside the tooltip:</p>
+
+<div class="container">
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover Over Me!</a>
+</div>
+
+<hr />
+
+<h2>Positioning Tooltips</h2>
+
+<p>By default, the tooltip appears on top of the element.</p>
+
+<p>Use the <b>data-replacement</b> attribute to position the tooltip on top, bottom, left or right of the element:</p>
+
+<div class="container">
+  <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a><br />
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a><br />
+  <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a><br />
+  <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+</div>
+
+<p><strong>Tip:</strong> use the <b>data-replacement="auto"</b> to let the browser decide where to position the tooltip:</p>
+
+<div class="container">
+  <a href="#" data-toggle="tooltip" data-replacement="auto left" title="Yippidydoodah!">Hover</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+</script>
+
+</body>
+</html>

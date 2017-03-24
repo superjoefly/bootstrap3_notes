@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Dropdowns</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Dropdowns</h1>
+
+<p>A dropdown menu is a toggleable menu that allows a user to choose one value from a predefined list:</p>
+
+<h2>Basic Dropdown</h2>
+
+<p>The <b>.dropdown</b> class indicates a dropdown menu.</p>
+
+<p>The <b>.dropdown-toggle</b> class and the <b>.data-toggle="dropdown"</b> attribute are used on a button or link to open and close the dropdown menu.</p>
+
+<p>The <b>.caret</b> class creates a down arrow to indicate that the button provides a dropdown option.</p>
+
+<p>The <b>.dropdown-menu</b> class is used on an ul-element to build the dropdown menu.</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropdown Divider</h2>
+
+<p>The <b>.divider</b> class is used to separate links inside a dropdown menu with a thin horizontal border:</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropdown Header</h2>
+
+<p>The <b>.dropdown-header</b> class is used to add headers inside the dropdown menu:</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Information Header</li>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Disabled and Active Items</h2>
+
+<p>Use the <b>.active</b> class to highlight the active dropdown item, and use the <b>.disabled</b> class to disable a dropdow item:</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Information Header</li>
+      <li class="active"><a href="#">Active</a></li>
+      <li class="disabled"><a href="#">Disabled</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropdown Position</h2>
+
+<p>Use the <b>.dropdown-menu-right</b> class to right align the dropdown menu:</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li class="dropdown-header">Information Header</li>
+      <li class="active"><a href="#">Active</a></li>
+      <li class="disabled"><a href="#">Disabled</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropup</h2>
+
+<p>Use the <b>.dropup</b> class to make the dropdown menu expand upwards:</p>
+
+<div class="container">
+  <div class="dropup">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Information Header</li>
+      <li class="active"><a href="#">Active</a></li>
+      <li class="disabled"><a href="#">Disabled</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropdown Accessibility</h2>
+
+<p>Use the <b>role</b> and <b>aria-*</b> attributes to improve accessibility for people using screen readers:</p>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Dropdown Toggle Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li class="dropdown-header" role="menu-item">Information Header</li>
+      <li class="active" role="menu-item"><a href="#">Active</a></li>
+      <li class="disabled" role="menu-item"><a href="#">Disabled</a></li>
+      <li role="menu-item"><a href="#">Item 3</a></li>
+      <li class="divider"></li>
+      <li role="menu-item"><a href="#">About</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" href="#">More</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

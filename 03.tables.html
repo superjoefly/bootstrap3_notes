@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Tables</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Tables</h1>
+
+<h2>Basic Table</h2>
+
+<p>A basic Bootstrap table has a light padding and only horizontal dividers.</p>
+
+<p>The <b>.table</b> class adds basic styling to a table:</p>
+
+<div class="container">
+  <table class="table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+  </table>
+</div>
+
+<hr />
+
+<h2>Striped Rows</h2>
+
+<p>The <b>.table-striped</b> class adds zebra stripes to a table:</p>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Barleycorn</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Template</td>
+      </tr>
+      <tr>
+        <td>Bear</td>
+        <td>Lee</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+
+<h2>Bordered Table</h2>
+
+<p>The <b>.table-bordered</b> class adds borders on all sides of the table and cells:</p>
+
+<div class="container">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+    <tr>
+      <td>Bear</td>
+      <td>Lee</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2>Hover Rows</h2>
+
+<p>The <b>.table-hover</b> class adds a hover effect (grey background color) on table rows:</p>
+
+<div class="container">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+    <tr>
+      <td>Bear</td>
+      <td>Lee</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2>Condensed Table</h2>
+
+<p>The <b>.table-condensed</b> class makes a table more compact by cutting cell padding in half:</p>
+
+<div class="container">
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+    <tr>
+      <td>Bear</td>
+      <td>Lee</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2>Contextual Classes</h2>
+
+<p>Contextual classes can be used to color table rows or table cells:</p>
+
+<div class="container">
+<table class="table table-hover">
+  <thead>
+    <tr class="success">
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="warning">
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr class="info">
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+    <tr class="danger">
+      <td>Bear</td>
+      <td>Lee</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2>Responsive Tables</h2>
+
+<p>The <b>.table-responsive</b> class creates a responsive table. The table will then scroll horizontally on small devices. There is no difference on larger devices:</p>
+
+<div class="container">
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Barleycorn</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Template</td>
+    </tr>
+    <tr>
+      <td>Bear</td>
+      <td>Lee</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</body>
+</html>

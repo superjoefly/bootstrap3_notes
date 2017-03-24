@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Grids</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px;">
+
+<h1>Bootstrap Grids</h1>
+
+<p>Bootstrap grid system allows up to 12 columns accross the page.</p>
+
+<p>If you don't want to use all 12 columns individually, you can group the colums together to create wider columns.</p>
+
+<p>The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+
+<hr />
+
+<h2>Grid Classes</h2>
+
+<p>Four classes:</p>
+
+<ul>
+  <li>xs (for phones)</li>
+  <li>sm (for tablets)</li>
+  <li>md (for desktops)</li>
+  <li>lg (for larger desktops)</li>
+</ul>
+
+<p>The classes above can be combined to create dynamic and flexible layouts.</p>
+
+<hr />
+
+<h2>Basic Structure</h2>
+
+<p>Basic structure of a grid: (see code)</p>
+
+<div class="row">
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+<div clas="row">
+  ...
+</div>
+
+<p>First: create a row (div class="row"). Then add the desired number of columns (tags with appropriate .col-*-* classes). <strong>The numbers in .col-*-* should always add up to 12 for each row.</strong></p>
+
+<h2>Three Equal Columns</h2>
+
+<p>Three equal-width columns starting at tablets and scaling to large desktops. Columns will stack on mobile:</p>
+
+<div class="container-fluid">
+  <h3>Hello World!</h3>
+  <p>Using div class="container-fluid"</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color: pink;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color: azure;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color: pink;">.col-sm-4</div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Two Unequal Columns</h2>
+
+<p>Two unequal columns starting at tablets and scaling to large desktops:</p>
+
+<div class="container">
+  <h3>Hello World!</h3>
+  <p>Using div class="container"</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color: pink">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color: azure">.col-sm-8</div>
+  </div>
+</div>
+
+</body>
+</html>

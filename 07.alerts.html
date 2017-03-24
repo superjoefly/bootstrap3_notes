@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Alerts</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Alerts</h1>
+
+<p>Alerts are created with the <b>.alert class</b>, followed by one of the four contextual classes <b>.alert-success</b>, <b>.alert-info</b>, <b>.alert-warning</b> or <b>.alert-danger</b>:</p>
+
+<hr />
+
+<h2>Basic Alerts</h2>
+
+<div class="alert alert-success">
+  <strong>Success</strong> Indictes successful or positive action.
+</div>
+<div class="alert alert-info">
+  <strong>Info</strong> Indictes neutral informative change or action.
+</div>
+<div class="alert alert-warning">
+  <strong>Warning</strong> Indictes warning that might need attention.
+</div>
+<div class="alert alert-danger">
+  <strong>Danger</strong> Indictes dangerous or potentially negative action.
+</div>
+
+<hr />
+
+<h2>Alert Links</h2>
+
+<p>Add the <b>alert-link</b> class to any links inside the alert box to create "matching colored links":</p>
+
+<div class="alert alert-success">
+  <strong>Success</strong> You should <a href="#" class="alert-link">read this message.</a>
+</div>
+<div class="alert alert-info">
+  <strong>Info</strong> You should <a href="#" class="alert-link">read this message.</a>
+</div>
+<div class="alert alert-warning">
+  <strong>Warning</strong> You should <a href="#" class="alert-link">read this message.</a>
+</div>
+<div class="alert alert-danger">
+  <strong>Danger</strong> You should <a href="#" class="alert-link">read this message.</a>
+</div>
+
+<hr />
+
+<h2>Closing Alerts</h2>
+
+<p>The a-element with <b>class="close"</b> and <b>data-dismiss="alert"</b> is used to close the alert box:</p>
+
+<div class="alert alert-success">
+  <strong>Success</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-info">
+  <strong>Info</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-warning">
+  <strong>Warning</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-danger">
+  <strong>Danger</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+
+<hr />
+
+<h2>Animated Alerts</h2>
+
+<p>The <b>alert-dismissable</b>, <b>.fade</b> and <b>.in</b> classes adds a fading effect when closing the alert message:</p>
+
+<div class="alert alert-success alert-dismissable fade in">
+  <strong>Success</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-info alert-dismissable fade in">
+  <strong>Info</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-warning alert-dismissable fade in">
+  <strong>Warning</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+<div class="alert alert-danger alert-dismissable fade in">
+  <strong>Danger</strong> You should read this message!<a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Button Groups</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Button Groups</h1>
+
+<p>Bootstrap allows you to group a series of buttons together (on a single line) in a button group.</p>
+
+<hr />
+
+<h2>Button Group</h2>
+
+<p>Use the <b>.btn-group</b> class on a div to create a button group:</p>
+
+<div class="container">
+<div class="btn-group">
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-info">Info</button>
+</div>
+</div>
+
+<hr />
+
+<h2>Button Group Sizes</h2>
+
+<p> Instead of applying button sizes to every button in a group, use class <b>.btn-group-lg|sm|xs</b> to size all buttons in the group:</p>
+
+<div class="container">
+<div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-success">Success</button>
+</div>
+</div>
+
+<hr />
+
+<h2>Vertical Button Group</h2>
+
+<p>Use the <b>.btn-group-vertical</b> class to create a vertical button group:</p>
+
+<div class="container">
+<div class="btn-group-vertical">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+</div>
+</div>
+
+<hr />
+
+<h2>Justified Button Groups</h2>
+
+<p>To span the entire width of the screen, use the <b>.btn-group-justified</b> class:</p>
+
+<div class="container">
+<div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-info">LINK</a>
+  <a href="#" class="btn btn-info">LINK</a>
+  <a href="#" class="btn btn-info">LINK</a>
+</div>
+</div>
+
+<p><strong>Note:</strong> for button-elements, you MUST wrap each button in a <b>.btn-group</b> class:</p>
+
+<div class="container">
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Dropdown Menus</h2>
+
+<p>Nest button groups to create dropdown menus:</p>
+
+<div class="btn-group btn-group-justify">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Something</a></li>
+      <li><a href="#">Something2</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h2>Split Button Dropdown</h2>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Button</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Something</a></li>
+    <li><a href="#">Something</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

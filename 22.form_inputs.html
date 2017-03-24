@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Form Inputs</title>
+  <meta charset="utf-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 10px">
+
+<h1>Bootstrap Form Inputs</h1>
+
+<h2>Supported Form Controls</h2>
+
+<p>Bootstrap supports the following form controls:</p>
+
+<ul>
+  <li>input</li>
+  <li>textarea</li>
+  <li>checkbox</li>
+  <li>radio</li>
+  <li>select</li>
+</ul>
+
+<hr />
+
+<h2>Input</h2>
+
+<p>Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+
+<p><strong>Note:</strong> for proper styling, be sure to declare the input!</p>
+
+<p>Form with two input elements; one of type text and one of type password:</p>
+
+<div class="container">
+  <div class="form-group">
+    <label for="usr">Name:</label>
+    <input type="text" class="form-control" id="usr" />
+  </div>
+  <di class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" />
+  </di>
+</div>
+
+<hr />
+
+<h2>Textarea</h2>
+
+<p>Textarea:</p>
+
+<div class="container">
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+</div>
+
+<hr />
+
+<h2>Checkboxes</h2>
+
+<p>Checkboxes are used to allow users to select any number of options from a list of preset options:</p>
+
+<p>In this example, the last option is disabled:</p>
+
+<div class="container">
+  <div class="checkbox">
+    <label><input type="checkbox" value="" />Option 1</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" value="" />Option 2</label>
+  </div>
+  <div class="checkbox disabled">
+    <label><input type="checkbox" value="" disabled/>Option 3</label>
+  </div>
+</div>
+
+<hr />
+
+<h2>Inline Checkbox</h2>
+
+<p>To make checkboxes appear on the same line, use the <b>.checkbox-inline</b> class:</p>
+
+<div class="container">
+  <div class="checkbox-inline">
+    <label class="checkbox"><input type="checkbox" value="" />Option 1</label>
+  </div>
+  <div class="checkbox-inline">
+    <label><input type="checkbox" value="" />Option 2</label>
+  </div>
+  <div class="checkbox-inline disabled">
+    <label><input type="checkbox" value="" disabled/>Option 3</label>
+  </div>
+</div>
+
+<hr />
+
+<h2>Radio Buttons</h2>
+
+<p>Radio buttons are used to limit the user to just one selection from a list of preset options.</p>
+
+<p>In this example, the last option is disabled:</p>
+
+<div class="container">
+  <div class="radio">
+    <label><input type="radio" name="optradio" />Option 1</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="optradio" />Option 2</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" name="optradio" disabled/>Option 3</label>
+  </div>
+</div>
+
+<hr />
+
+<h2>Inline Radio Buttons</h2>
+
+<p>To make radio buttons appear on the same line, use the <b>.radio-inline</b> class:</p>
+
+<div class="container">
+  <div class="radio-inline">
+    <label><input type="radio" name="optradio" />Option 1</label>
+  </div>
+  <div class="radio-inline">
+    <label><input type="radio" name="optradio" />Option 2</label>
+  </div>
+  <div class="radio-inline disabled">
+    <label><input type="radio" name="optradio" disabled/>Option 3</label>
+  </div>
+</div>
+
+<hr />
+
+<h2>Select List</h2>
+
+<p>Select lists are used if you want to allow the user to pick from multiple options.</p>
+
+<p>The following is an example of a dropdown (select list):</p>
+
+<div class="container">
+  <div class="form-group">
+    <label for="sel1">Select List:</label>
+    <select class="form-control" id="sel1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</div>
+
+</body>
+</html>
